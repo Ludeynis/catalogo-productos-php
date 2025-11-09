@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color:rgb(202, 151, 250);
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background-color:#ddd;
+}
+
+.producto{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(202, 151, 250);
+    
+}
+
+.producto .precio {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.producto .disponibilidad, .producto .id {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;   
+    margin-bottom: 15px; 
+}
+
+.producto h2 {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.producto .descripcion{
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/*cada vez que el producto esté disponible, se mostrará con este estilo */
+.disponible {
+    color: #28a745;
+    font-weight: 800;
+}
+
+/*cada vez que el producto esté agotado, se mostrará con este estilo */
+.agotado {
+    color: red;
+    font-weight: 800;
+    text-decoration: line-through;
+}
+
+.producto button {
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: #555;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color:#333;
+}
