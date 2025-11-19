@@ -1,16 +1,18 @@
 body{
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 header{
-    background-color:rgb(202, 151, 250);
-    color: #333;
+    background-color:#007BFF;
+    color: #FFF;
     padding: 15px;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 1px;
     width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .galeria{
@@ -19,31 +21,38 @@ header{
     justify-content: center;
     gap: 30px;
     padding: 40px;
-    background-color:#ddd;
+    background-color:#f5f5f5;
 }
 
 .producto{
-    border: 1px solid #ddd;
+    border: 1px solid #EAEAEA;
     border-radius: 10px;
     width: 300px;
     padding: 20px;
     margin: 5px;
     text-align: center;
-    background-color: rgb(202, 151, 250);
-    
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease; 
+}
+
+.producto:hover {
+    transform: translateY(-5px); /* Pequeño efecto hover para el producto */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .producto .precio {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #333;
+    color:#212529;
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.producto .disponibilidad, .producto .id {
+.producto, .producto .id {
     font-size: 0.9rem;
     margin: 5px 0;
+    color: #6C757D;
 }
 
 .producto img {
@@ -55,26 +64,26 @@ header{
 
 .producto h2 {
     font-size: 1.4rem;
-    color: #555;
+    color: #212529;;
     margin-bottom: 10px;
 }
 
 .producto .descripcion{
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 0.95rem;
+    color: #6C757D;
     margin-bottom: 15px;
     text-align: justify;
 }
 
 /*cada vez que el producto esté disponible, se mostrará con este estilo */
 .disponible {
-    color: #28a745;
+    color: #28A745;
     font-weight: 800;
 }
 
 /*cada vez que el producto esté agotado, se mostrará con este estilo */
 .agotado {
-    color: red;
+    color: #DC3545;
     font-weight: 800;
     text-decoration: line-through;
 }
@@ -83,11 +92,13 @@ header{
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 10px 15px;
-    background-color: #555;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .producto button:hover {
-    background-color:#333;
+    background-color:#0056b3;
 }
